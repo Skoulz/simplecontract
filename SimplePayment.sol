@@ -12,8 +12,7 @@ contract SimplePaymentContract{
     event Pay_Method(address indexed payer, uint256 amount)
 
     constructor (address payable _AddressOwner) {
-    //AddressOwner= payable(msg.sender);
-    AddressOwner = _AddressOwner;
+        AddressOwner= payable(msg.sender);
     }
 
    function method_pay (uint256 _value) public payable {
