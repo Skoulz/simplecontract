@@ -2,7 +2,6 @@
 
 pragma solidity ^0.8.15;
 
-// Uncomment this line to use console.log
 import "hardhat/console.sol";
 import "./Ownable.sol";
 
